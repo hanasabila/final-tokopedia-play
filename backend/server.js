@@ -4,20 +4,18 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const mongoString = process.env.db_url;
 
-// connect to database
-mongoose.connect(process.env.db_url)
-.then(() => {
-    console.log('connected to database')
-    // listen to port
-    app.listen(process.env.PORT, () => {
-      console.log('listening for requests on port', process.env.PORT)
-    })
-  })
-  .catch((err) => {
-    console.log(err)
-  })
+mongoose.connect(mongoString);
+const database = mongoose.connection;
 
+database.on('error', (error) => {
+    console.log(error);
+});
+
+database.once('connected', ( ) => {
+    console.log('Database Connected');
+})
 
 
 const app = express();
@@ -39,3 +37,7 @@ app.use(
 app.use('/tokplay',videoRouter);
 app.use('/tokplay', commentRouter);
 app.use('/tokplay', productRouter);
+
+app.listen(process.env.PORT, () => {
+  console.log('Server is running on port', process.env.PORT);
+});
