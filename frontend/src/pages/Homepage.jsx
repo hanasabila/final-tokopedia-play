@@ -1,6 +1,4 @@
 import { Box, Text, Heading, Container, Center } from "@chakra-ui/react";
-// import useFetch from "../custom-hooks/useFetch";
-import CommentForm from "../components/CommentForm";
 import VideoCard from "../components/VideoCard";
 import Footer from "../components/Footer";
 

@@ -1,4 +1,4 @@
-import { Card, CardBody, Image, SimpleGrid, Box, Container, Text, Heading, Divider } from "@chakra-ui/react";
+import { Box, Text, Heading, Divider } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { base_URL } from "../config";

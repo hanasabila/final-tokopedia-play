@@ -3,7 +3,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { base_URL } from "../config";
-//import CommentForm from "../components/CommentForm";
 import ShowComments from "../components/ShowComments";
 import ProductCard from "../components/ProductCard";
 import Footer from "../components/Footer";

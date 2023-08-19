@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardBody, Image, SimpleGrid, Box } from "@chakra-ui/react";
+import { Image, SimpleGrid, Box } from "@chakra-ui/react";
 import useFetch from "../custom-hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 import { base_URL } from "../config";
