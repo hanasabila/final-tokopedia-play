@@ -281,14 +281,10 @@ https://github.com/hanasabila/midterm-tokopedia-play.git
 ```
 Install the packages needed
 ```bash
-npm install express mongoose body-parser nodemon dotenv cors
+npm install
 ```
-Use ```npm start``` to run the program. But since we have installed `nodemon`, you could use it to automatically restart the server every time you make changes. To use `nodemon`, follow this step:
+Use ```npm run dev``` to run the program, both for the backend and frontend. But you can always customize the script based on your need, just go to `package.json` file and change the script.
 
-- Go to `packages.json` file
-- Look for `"scripts"` in the code
-- Below `"test"` write this: `"start": "nodemon index.js"`. Don't forget to use the comma (,) at the end of the `test` line.
-
-Open `.env` file in the folder, then set your database connection.
+Create `.env` file in the backend folder, then set your database connection and port.
 
 ### Thankyou!
