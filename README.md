@@ -1,4 +1,4 @@
-# 📹 Tokopedia Play Back-end 
+# 📹 Tokopedia Play Clone 
 This project is a development of back-end service for Tokopedia Play, submitted for the mid-term project of Full Stack Engineering on GIGIH 3.0 Program. It uses Node.js and Express.js for building the APIs and MongoDB for the database. For the frontend-side, this project uses React.js and chakraUI for the UI library.
 
 ### 📹 Feature
